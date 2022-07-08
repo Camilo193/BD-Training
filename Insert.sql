@@ -75,26 +75,231 @@ INSERT INTO `mydb`.`materias`
 (`Codigo`,
 `Nombre`,
 `Creditos`,
-`Contenido`,
-`Alumno`)
+`Contenido`)
 VALUES
 ('01' ,
 'Palinologia' ,
-Creditos ,
-Contenido ,
-Alumno );
+4 ,
+Contenido );
+
+INSERT INTO `mydb`.`materias`
+(`Codigo`,
+`Nombre`,
+`Creditos`,
+`Contenido`)
+VALUES
+('02' ,
+'Geologia' ,
+4 ,
+Contenido );
+
+INSERT INTO `mydb`.`materias`
+(`Codigo`,
+`Nombre`,
+`Creditos`,
+`Contenido`)
+VALUES
+('03',
+'Cálculo diferencial',
+4,
+Contenido );
+
+INSERT INTO `mydb`.`materias`
+(`Codigo`,
+`Nombre`,
+`Creditos`,
+`Contenido`)
+VALUES
+('04',
+'Cálculo integral',
+4,
+Contenido );
+
+
+
+#Grupos 
+
+INSERT INTO `mydb`.`grupos`
+(`Codigo`,
+`Materia`)
+VALUES
+( Codigo ,
+ '01' );
+
+INSERT INTO `mydb`.`grupos`
+(`Codigo`,
+`Materia`)
+VALUES
+( Codigo ,
+ '02' );
+
+INSERT INTO `mydb`.`grupos`
+(`Codigo`,
+`Materia`)
+VALUES
+(Codigo ,
+'03');
 
 # Horarios
 
 INSERT INTO `mydb`.`horarios`
-(`Salon`,
-`Dias`,
+(`Codigo`,
+`Grupo`,
+`Dia`,
 `HoraInicial`,
 `HoraFinal`,
-`Grupo`)
+`Bloque`,
+`Salon`)
 VALUES
-('',
-'M-W',
-'8:0:0',
-'10:0:0',
-'01');
+(   '01' ,
+   01 ,
+   'L-W' ,
+   8,
+   10,
+   '12',
+   '101' );
+}
+NSERT INTO `mydb`.`horarios`
+(`Codigo`,
+`Grupo`,
+`Dia`,
+`HoraInicial`,
+`HoraFinal`,
+`Bloque`,
+`Salon`)
+VALUES
+(   '02' ,
+   02 ,
+   'M-J' ,
+   10,
+   12,
+   '11',
+   '202' );
+
+INSERT INTO `mydb`.`horarios`
+(`Codigo`,
+`Grupo`,
+`Dia`,
+`HoraInicial`,
+`HoraFinal`,
+`Bloque`,
+`Salon`)
+VALUES
+(   '03' ,
+   '3' ,
+   'M-J' ,
+   9,
+   11,
+   '21',
+   '202' );
+
+   INSERT INTO `mydb`.`horarios`
+(`Codigo`,
+`Grupo`,
+`Dia`,
+`HoraInicial`,
+`HoraFinal`,
+`Bloque`,
+`Salon`)
+VALUES
+(   '04' ,
+   04 ,
+   'w-v' ,
+   10,
+   12,
+   '11',
+   '312' );
+#Pensums
+
+INSERT INTO `mydb`.`pensums`
+(`Codigo`,
+`Carrera`,
+`Materia`)
+VALUES
+('01',
+'01',
+'03');
+
+INSERT INTO `mydb`.`pensums`
+(`Codigo`,
+`Carrera`,
+`Materia`)
+VALUES
+('01',
+'01',
+'04');
+
+INSERT INTO `mydb`.`pensums`
+(`Codigo`,
+`Carrera`,
+`Materia`)
+VALUES
+('02',
+'02',
+'02');   
+
+
+INSERT INTO `mydb`.`pensums`
+(`Codigo`,
+`Carrera`,
+`Materia`)
+VALUES
+('02',
+'02',
+'03');  
+
+INSERT INTO `mydb`.`pensums`
+(`Codigo`,
+`Carrera`,
+`Materia`)
+VALUES
+('02',
+'02',
+'04');  
+
+#semestre 
+
+INSERT INTO `mydb`.`semestres`
+(`Periodo`,
+`Grupo`,
+`Alumno`)
+VALUES
+('2022-1',
+03,
+'1040752310');
+
+INSERT INTO `mydb`.`semestres`
+(`Periodo`,
+`Grupo`,
+`Alumno`)
+VALUES
+('2022-1',
+04,
+'1040752310');
+
+INSERT INTO `mydb`.`semestres`
+(`Periodo`,
+`Grupo`,
+`Alumno`)
+VALUES
+('2022-1',
+01,
+'1152716515');
+
+INSERT INTO `mydb`.`semestres`
+(`Periodo`,
+`Grupo`,
+`Alumno`)
+VALUES
+('2022-1',
+02,
+'1152716515');
+
+INSERT INTO `mydb`.`semestres`
+(`Periodo`,
+`Grupo`,
+`Alumno`)
+VALUES
+('2022-1',
+04,
+'1152716515');
