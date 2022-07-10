@@ -1,0 +1,7 @@
+-No ejecuta el script completo de inserts
+
+-Estructura de pensum incorrecta en la clave primaria
+
+-Hora inicio y hora fin con errores en horario con los datos insertados.
+
+-El resto parece estar bien
