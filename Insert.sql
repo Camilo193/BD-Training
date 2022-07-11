@@ -6,6 +6,17 @@ INSERT INTO `mydb`.`alumnos`
 `Apellidos`,
 `Celular`)
 VALUES
+('1040752310' ,
+'Juan Camilo' ,
+'Urrego Serna' ,
+'3008446406' );
+
+INSERT INTO `mydb`.`alumnos`
+(`Cedula`,
+`Nombres`,
+`Apellidos`,
+`Celular`)
+VALUES
 ('1152716515' ,
 'Sidny Yuliana' ,
 'Zapata Hoyos' ,
@@ -17,10 +28,21 @@ INSERT INTO `mydb`.`alumnos`
 `Apellidos`,
 `Celular`)
 VALUES
-('1040752310' ,
-'Juan Camilo' ,
-'Urrego Serna' ,
-'3008446406' );
+('1152716514' ,
+'Natalia Andrea' ,
+'Rojas ' ,
+'3132145676' );
+
+INSERT INTO `mydb`.`alumnos`
+(`Cedula`,
+`Nombres`,
+`Apellidos`,
+`Celular`)
+VALUES
+('43756409' ,
+'Dary ' ,
+'Hoyos' ,
+'3147140970' );
 
 # Carreras
 
@@ -38,6 +60,12 @@ VALUES
 ('02' ,
 'Ingenieria Ambiental' );
 
+INSERT INTO `mydb`.`carreras`
+(`Codigo`,
+`Nombre`)
+VALUES
+('03' ,
+'Psicologia' ); 
 
 #Matriculas
 
@@ -140,6 +168,13 @@ VALUES
 (Codigo ,
 '03');
 
+INSERT INTO `mydb`.`grupos`
+(`Codigo`,
+`Materia`)
+VALUES
+(Codigo ,
+'04');
+
 # Horarios
 
 INSERT INTO `mydb`.`horarios`
@@ -154,12 +189,12 @@ VALUES
 (   '01' ,
    01 ,
    'L-W' ,
-   8,
-   10,
+   08:00:00,
+   10:00:00,
    '12',
    '101' );
-}
-NSERT INTO `mydb`.`horarios`
+
+INSERT INTO `mydb`.`horarios`
 (`Codigo`,
 `Grupo`,
 `Dia`,
@@ -171,8 +206,8 @@ VALUES
 (   '02' ,
    02 ,
    'M-J' ,
-   10,
-   12,
+   10:00:00,
+   12:00:00,
    '11',
    '202' );
 
@@ -188,12 +223,12 @@ VALUES
 (   '03' ,
    '3' ,
    'M-J' ,
-   9,
-   11,
+   09:00:00,
+   11:00:00,
    '21',
    '202' );
 
-   INSERT INTO `mydb`.`horarios`
+INSERT INTO `mydb`.`horarios`
 (`Codigo`,
 `Grupo`,
 `Dia`,
@@ -205,8 +240,8 @@ VALUES
 (   '04' ,
    04 ,
    'w-v' ,
-   10,
-   12,
+   10:00:00,
+   12:00:00,
    '11',
    '312' );
 #Pensums
