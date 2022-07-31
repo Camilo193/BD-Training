@@ -1,6 +1,6 @@
 #Personas
 
-INSERT INTO `mydb`.`alumnos`
+INSERT INTO `universidad`.`alumnos`
 (`Cedula`,
 `Nombres`,
 `Apellidos`,
@@ -11,7 +11,8 @@ VALUES
 'Urrego Serna' ,
 '3008446406' );
 
-INSERT INTO `mydb`.`alumnos`
+
+INSERT INTO `universidad`.`alumnos`
 (`Cedula`,
 `Nombres`,
 `Apellidos`,
@@ -22,7 +23,7 @@ VALUES
 'Zapata Hoyos' ,
 '3012162691' );
 
-INSERT INTO `mydb`.`alumnos`
+INSERT INTO `universidad`.`alumnos`
 (`Cedula`,
 `Nombres`,
 `Apellidos`,
@@ -33,7 +34,7 @@ VALUES
 'Rojas ' ,
 '3132145676' );
 
-INSERT INTO `mydb`.`alumnos`
+INSERT INTO `universidad`.`alumnos`
 (`Cedula`,
 `Nombres`,
 `Apellidos`,
@@ -46,21 +47,21 @@ VALUES
 
 # Carreras
 
-INSERT INTO `mydb`.`carreras`
+INSERT INTO `universidad`.`carreras`
 (`Codigo`,
 `Nombre`)
 VALUES
 ('01' ,
 'Ingenieria de Sistemas' );
 
-INSERT INTO `mydb`.`carreras`
+INSERT INTO `universidad`.`carreras`
 (`Codigo`,
 `Nombre`)
 VALUES
 ('02' ,
 'Ingenieria Ambiental' );
 
-INSERT INTO `mydb`.`carreras`
+INSERT INTO `universidad`.`carreras`
 (`Codigo`,
 `Nombre`)
 VALUES
@@ -69,7 +70,7 @@ VALUES
 
 #Matriculas
 
-INSERT INTO `mydb`.`matriculas`
+INSERT INTO `universidad`.`matriculas`
 (`Carrera`,
 `Alumno`,
 `FechaInicio`)
@@ -78,7 +79,7 @@ VALUES
 '1040752310',
 '2008-07-04');
 
-INSERT INTO `mydb`.`matriculas`
+INSERT INTO `universidad`.`matriculas`
 (`Carrera`,
 `Alumno`,
 `FechaInicio`)
@@ -88,9 +89,9 @@ VALUES
 '2008-07-04');
 
 
-#Casilleras
+#Casilleros
 
-INSERT INTO `mydb`.`casilleros`
+INSERT INTO `universidad`.`casilleros`
 (`Numero`,
 `Dueño`)
 VALUES
@@ -99,7 +100,7 @@ VALUES
 
 #Materias
 
-INSERT INTO `mydb`.`materias`
+INSERT INTO `universidad`.`materias`
 (`Codigo`,
 `Nombre`,
 `Creditos`,
@@ -110,7 +111,7 @@ VALUES
 4 ,
 Contenido );
 
-INSERT INTO `mydb`.`materias`
+INSERT INTO `universidad`.`materias`
 (`Codigo`,
 `Nombre`,
 `Creditos`,
@@ -121,7 +122,7 @@ VALUES
 4 ,
 Contenido );
 
-INSERT INTO `mydb`.`materias`
+INSERT INTO `universidad`.`materias`
 (`Codigo`,
 `Nombre`,
 `Creditos`,
@@ -132,7 +133,7 @@ VALUES
 4,
 Contenido );
 
-INSERT INTO `mydb`.`materias`
+INSERT INTO `universidad`.`materias`
 (`Codigo`,
 `Nombre`,
 `Creditos`,
@@ -147,28 +148,28 @@ Contenido );
 
 #Grupos 
 
-INSERT INTO `mydb`.`grupos`
+INSERT INTO `universidad`.`grupos`
 (`Codigo`,
 `Materia`)
 VALUES
 ( Codigo ,
  '01' );
 
-INSERT INTO `mydb`.`grupos`
+INSERT INTO `universidad`.`grupos`
 (`Codigo`,
 `Materia`)
 VALUES
 ( Codigo ,
  '02' );
 
-INSERT INTO `mydb`.`grupos`
+INSERT INTO `universidad`.`grupos`
 (`Codigo`,
 `Materia`)
 VALUES
 (Codigo ,
 '03');
 
-INSERT INTO `mydb`.`grupos`
+INSERT INTO `universidad`.`grupos`
 (`Codigo`,
 `Materia`)
 VALUES
@@ -177,7 +178,7 @@ VALUES
 
 # Horarios
 
-INSERT INTO `mydb`.`horarios`
+INSERT INTO `universidad`.`horarios`
 (`Codigo`,
 `Grupo`,
 `Dia`,
@@ -189,12 +190,12 @@ VALUES
 (   '01' ,
    01 ,
    'L-W' ,
-   08:00:00,
-   10:00:00,
+   '08:00:00',
+   '10:00:00',
    '12',
    '101' );
 
-INSERT INTO `mydb`.`horarios`
+INSERT INTO `universidad`.`horarios`
 (`Codigo`,
 `Grupo`,
 `Dia`,
@@ -206,12 +207,12 @@ VALUES
 (   '02' ,
    02 ,
    'M-J' ,
-   10:00:00,
-   12:00:00,
+   '10:00:00',
+   '12:00:00',
    '11',
    '202' );
 
-INSERT INTO `mydb`.`horarios`
+INSERT INTO `universidad`.`horarios`
 (`Codigo`,
 `Grupo`,
 `Dia`,
@@ -223,12 +224,12 @@ VALUES
 (   '03' ,
    '3' ,
    'M-J' ,
-   09:00:00,
-   11:00:00,
+   '09:00:00',
+   '11:00:00',
    '21',
    '202' );
 
-INSERT INTO `mydb`.`horarios`
+INSERT INTO `universidad`.`horarios`
 (`Codigo`,
 `Grupo`,
 `Dia`,
@@ -240,13 +241,13 @@ VALUES
 (   '04' ,
    04 ,
    'w-v' ,
-   10:00:00,
-   12:00:00,
+   '10:00:00',
+   '12:00:00',
    '11',
    '312' );
 #Pensums
 
-INSERT INTO `mydb`.`pensums`
+INSERT INTO `universidad`.`pensums`
 (`Codigo`,
 `Carrera`,
 `Materia`)
@@ -255,7 +256,7 @@ VALUES
 '01',
 '03');
 
-INSERT INTO `mydb`.`pensums`
+INSERT INTO `universidad`.`pensums`
 (`Codigo`,
 `Carrera`,
 `Materia`)
@@ -264,7 +265,7 @@ VALUES
 '01',
 '04');
 
-INSERT INTO `mydb`.`pensums`
+INSERT INTO `universidad`.`pensums`
 (`Codigo`,
 `Carrera`,
 `Materia`)
@@ -274,7 +275,7 @@ VALUES
 '02');   
 
 
-INSERT INTO `mydb`.`pensums`
+INSERT INTO `universidad`.`pensums`
 (`Codigo`,
 `Carrera`,
 `Materia`)
@@ -283,7 +284,7 @@ VALUES
 '02',
 '03');  
 
-INSERT INTO `mydb`.`pensums`
+INSERT INTO `universidad`.`pensums`
 (`Codigo`,
 `Carrera`,
 `Materia`)
@@ -294,7 +295,7 @@ VALUES
 
 #semestre 
 
-INSERT INTO `mydb`.`semestres`
+INSERT INTO `universidad`.`semestres`
 (`Periodo`,
 `Grupo`,
 `Alumno`)
@@ -303,7 +304,7 @@ VALUES
 03,
 '1040752310');
 
-INSERT INTO `mydb`.`semestres`
+INSERT INTO `universidad`.`semestres`
 (`Periodo`,
 `Grupo`,
 `Alumno`)
@@ -312,7 +313,7 @@ VALUES
 04,
 '1040752310');
 
-INSERT INTO `mydb`.`semestres`
+INSERT INTO `universidad`.`semestres`
 (`Periodo`,
 `Grupo`,
 `Alumno`)
@@ -321,7 +322,7 @@ VALUES
 01,
 '1152716515');
 
-INSERT INTO `mydb`.`semestres`
+INSERT INTO `universidad`.`semestres`
 (`Periodo`,
 `Grupo`,
 `Alumno`)
@@ -330,7 +331,7 @@ VALUES
 02,
 '1152716515');
 
-INSERT INTO `mydb`.`semestres`
+INSERT INTO `universidad`.`semestres`
 (`Periodo`,
 `Grupo`,
 `Alumno`)
